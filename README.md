@@ -4,9 +4,6 @@ Evently is a full-featured, cross-platform mobile application built with Flutter
 
 ---
 ## 📸 Screenshots
-
-| Content |
-| :---: | :---: | :---: |
 | <img src="assets/Screenshot1.png" width="250" alt="Onboarding"/> | <img src="assets/Screenshot2.png" width="250" alt="After Login"/> | <img src="assets/Screenshot3.png" width="250" alt="Adding Event"/> | | <img src="assets/Screenshot4.png" width="250" alt="Arabic Screen"/> |
  | <img src="assets/Screenshot5.png" width="250" alt="Arabic Screen"/> |
 
