@@ -1,0 +1,34 @@
+class EventlyImages {
+  static String evently = "assets/images/evently_logo.png";
+  static String firstPageView = "assets/images/first_page_view.png";
+  static String secondPageView = "assets/images/second_page_view.png";
+  static String thirdPageView = "assets/images/third_page_view.png";
+  static String fourthPageView = "assets/images/fourth_page_view.png";
+  static String firstPageViewNight = "assets/images/first_page_view_night.png";
+  static String secondPageViewNight = "assets/images/second_page_view_night.png";
+  static String thirdPageViewNight = "assets/images/third_page_view_night.png";
+  static String fourthPageViewNight = "assets/images/fourth_page_view_night.png";
+  static String forgetPasswordLight = "assets/images/forget_password_light.png";
+  static String forgetPasswordNight = "assets/images/forget_password_dark.png";
+  static String route = "assets/images/route.png";
+  static String birthdayLight = "assets/images/Birthday_light.png";
+  static String bookClubLight = "assets/images/Book_Club_light.png";
+  static String exhibitionLight = "assets/images/Exhibition_light.png";
+  static String meetingLight = "assets/images/Meeting_light.png";
+  static String sportLight = "assets/images/Sport_light.png";
+  static String birthdayDark = "assets/images/Birthday_light.png";
+  static String sportDark = "assets/images/Sport.png";
+  static String bookClubDark = "assets/images/Book_Club.png";
+  static String exhibitionDark = "assets/images/Exhibition.png";
+  static String meetingDark = "assets/images/Meeting.png";
+  static String sportImage = "assets/images/sport_group.png";
+  static String birthdayImage = "assets/images/birthday_group.png";
+  static String bookClubImage = "assets/images/book_club_group.png";
+  static String meetingImage = "assets/images/meeting_group.png";
+  static String exhibitionImage = "assets/images/exhibition_group.png";
+  static String sportImageDark = "assets/images/sport_group_dark.png";
+  static String birthdayImageDark = "assets/images/birthday_group_dark.png";
+  static String bookClubImageDark = "assets/images/book_club_group_dark.png";
+  static String meetingImageDark = "assets/images/meeting_group_dark.png";
+  static String exhibitionImageDark = "assets/images/exhibition_group_dark.png";
+}
