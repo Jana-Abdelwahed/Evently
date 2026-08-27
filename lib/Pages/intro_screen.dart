@@ -11,12 +11,13 @@ import '../utils/dimensions.dart';
 import '../utils/evently_routes.dart';
 
 class IntroScreen extends StatelessWidget {
+  const IntroScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     var themeProvider = Provider.of<ThemeProvider>(context);
     var width = context.width;
     var height = context.height;
-    bool isSelected = false;
 
     return Scaffold(
       body: Padding(
@@ -54,7 +55,7 @@ class IntroScreen extends StatelessWidget {
                     AppLocalizations.of(context)!.language,
                     style: Theme.of(context).textTheme.labelMedium,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   CustomLanguageContainer(
                     langCode: "en",
                     language: AppLocalizations.of(context)!.english,
@@ -73,7 +74,7 @@ class IntroScreen extends StatelessWidget {
                     AppLocalizations.of(context)!.theme,
                     style: Theme.of(context).textTheme.labelMedium,
                   ),
-                  Spacer(),
+                  const Spacer(),
                   CustomThemeModeContainer(
                     themeMode: ThemeMode.light,
                     icon: EventlyIcons.lightMode,
@@ -93,7 +94,7 @@ class IntroScreen extends StatelessWidget {
                     ),
                     shape: WidgetStatePropertyAll(
                       RoundedRectangleBorder(
-                        borderRadius: BorderRadiusGeometry.circular(16),
+                        borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),

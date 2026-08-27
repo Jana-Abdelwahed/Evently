@@ -17,6 +17,7 @@ class CustomPageViewItem extends StatefulWidget {
   String description;
   PageController controller;
   int index;
+  final bool isLastPage;
 
   CustomPageViewItem({
     super.key,
@@ -25,6 +26,7 @@ class CustomPageViewItem extends StatefulWidget {
     required this.description,
     required this.controller,
     required this.index,
+    this.isLastPage = false,
   });
 
   @override

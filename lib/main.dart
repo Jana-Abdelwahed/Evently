@@ -27,6 +27,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   final pref = await SharedPreferences.getInstance();
+  await pref.clear();
   bool isOnboardingSeen = pref.getBool("onBoardingSeen") ?? false;
   await CacheHelper.cacheInit();
   runApp(

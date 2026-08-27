@@ -6,18 +6,35 @@ import 'package:provider/provider.dart';
 
 import '../widgets/page_view_item.dart';
 
-class OnBoardingScreen extends StatelessWidget {
+class OnBoardingScreen extends StatefulWidget {
+  const OnBoardingScreen({super.key});
+
+  @override
+  State<OnBoardingScreen> createState() => _OnBoardingScreenState();
+}
+
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final PageController _controller = PageController();
   bool onLastPage = false;
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     var themeProvider = Provider.of<ThemeProvider>(context);
+
     return Scaffold(
       body: PageView(
-        onPageChanged: (index) {
-          onLastPage = (index == 2);
-        },
         controller: _controller,
+        onPageChanged: (index) {
+          setState(() {
+            onLastPage = (index == 2);
+          });
+        },
         children: [
           CustomPageViewItem(
             pageViewImage: themeProvider.isDark
@@ -27,6 +44,7 @@ class OnBoardingScreen extends StatelessWidget {
             description: AppLocalizations.of(context)!.onboarding2Description,
             controller: _controller,
             index: 0,
+            isLastPage: onLastPage,
           ),
           CustomPageViewItem(
             pageViewImage: themeProvider.isDark
@@ -36,6 +54,7 @@ class OnBoardingScreen extends StatelessWidget {
             description: AppLocalizations.of(context)!.onboarding3Description,
             controller: _controller,
             index: 1,
+            isLastPage: onLastPage,
           ),
           CustomPageViewItem(
             pageViewImage: themeProvider.isDark
@@ -45,6 +64,7 @@ class OnBoardingScreen extends StatelessWidget {
             description: AppLocalizations.of(context)!.onboarding4Description,
             controller: _controller,
             index: 2,
+            isLastPage: onLastPage,
           ),
         ],
       ),
